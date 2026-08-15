@@ -1,0 +1,24 @@
+{
+  "name": "fe-handwrite",
+  "version": "1.0.0",
+  "description": "handwrite",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.17.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "tsx": "^4.23.12",
+    "typescript": "5.9.3"
+  }
+}

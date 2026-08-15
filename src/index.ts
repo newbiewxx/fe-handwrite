@@ -1,0 +1,1 @@
+import "@/questions/1.flat";
