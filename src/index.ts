@@ -7,4 +7,5 @@
 // import "@/questions/7.array.reduce";
 // import "@/questions/8.function.call";
 // import "@/questions/9.function.apply";
-import "@/questions/10.function.bind";
+// import "@/questions/10.function.bind";
+import "@/questions/11.debounce"
