@@ -9,4 +9,5 @@
 // import "@/questions/9.function.apply";
 // import "@/questions/10.function.bind";
 // import "@/questions/11.debounce"
-import "@/questions/12.throttle";
+// import "@/questions/12.throttle";
+import "@/questions/13.curry";
