@@ -11,3 +11,6 @@
 // import "@/questions/11.debounce"
 // import "@/questions/12.throttle";
 import "@/questions/13.curry";
+
+
+import "@/questions/31.vnodeToDom";
