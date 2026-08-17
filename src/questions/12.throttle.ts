@@ -11,16 +11,16 @@ const throttle = (callback: Function, delay: number) => {
   };
 };
 
-const log = (a: any) => console.log('log ============>', a);
+const log = (a: any) => console.log("log ============>", a);
 
 const throttledLog = throttle(log, 1000);
 
 throttledLog(1);
 throttledLog(2);
 throttledLog(3);
-await new Promise((resolve) => setTimeout(resolve, 1000));
+await new Promise(resolve => setTimeout(resolve, 1000));
 throttledLog(4);
 throttledLog(5);
 throttledLog(6);
 
-
+export { throttle };
