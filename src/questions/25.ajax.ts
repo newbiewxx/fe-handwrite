@@ -24,10 +24,28 @@ const ajax = (url: string, callback: (data: any) => void) => {
   xhr.send();
 };
 
-
-ajax("https://jsonplaceholder.typicode.com/users", (data) => {
+ajax("https://jsonplaceholder.typicode.com/users", data => {
   console.log(data);
 });
 
+// promise 版本
+const axios = (url: string) => {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+    xhr.responseType = "json";
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState === 4) {
+        if (xhr.status >= 200 && xhr.status < 300) {
+          // 获取数据
+          const data = xhr.response;
+          resolve(data);
+        } else {
+          reject(xhr.response);
+        }
+      }
+    };
+  });
+};
 
-export { ajax };
+export { ajax, axios };
